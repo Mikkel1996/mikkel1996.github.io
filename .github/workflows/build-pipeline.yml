@@ -27,6 +27,8 @@ jobs:
         run: echo "Hello $WUHU"
         env:
           WUHU: Mikkel
+      - name: "supersecret"
+        run: echo "Koden til skapet er ${{secrets.PASSWORD}}" 
   deploy:
     needs: build
     runs-on: ubuntu-latest
